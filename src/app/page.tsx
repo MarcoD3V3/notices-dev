@@ -4,8 +4,7 @@ import { NoticeComponent } from "@/components/NoticeComponent";
 export default function Home() {
   return (
     <div>
-      <div>
-      </div>
+      <div></div>
       <div></div>
       <div>
         <NoticeComponent />
