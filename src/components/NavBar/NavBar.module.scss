@@ -1,3 +1,42 @@
 .navbar {
-  
+  position: fixed;
+  background: linear-gradient(to right, #3d113d, #280722, #10010c);
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  .__header {
+    display: flex;
+    width: 100%;
+    position: relative;
+    .__containerLogo {
+      width: 100%;
+      height: 100%;
+      font-family: "Monoton", cursive;
+      font-size: 60px;
+      color: #888;
+      padding-top: 60px;
+      font-weight: 500;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+    }
+  }
+  .__nav {
+    width: 100;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 3px 12px;
+    .__listLinks {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-top: 1px solid #8882;
+      .__itemLinks {
+        color: #999;
+        cursor: pointer;
+      }
+    }
+  }
 }

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import styles from "./NoticeComponent.module.scss";
+import CircularProgress from "@mui/material/CircularProgress";
 
 export type NoticeComponentProps = {};
 
@@ -52,14 +53,23 @@ function ListNotice() {
   }, []);
 
   if (error) {
-    return <p>Error: {error}</p>;
+    return (
+      <div className={styles.errorContainer}>
+        <p>Error: {error}</p>
+      </div>
+    );
   }
 
   if (isLoad) {
-    return <p>Loading...</p>;
+    return (
+      <div className={styles.loadingContainer}>
+        <p>Loading...</p>
+        <CircularProgress color="inherit" />
+      </div>
+    );
   }
   return (
-    <div>
+    <div className={styles.contentNews}>
       {Noti.map((source) => (
         <div key={source.id}>
           <h1>{source.name}</h1>

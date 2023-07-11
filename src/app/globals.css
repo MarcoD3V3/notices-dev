@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "https://fonts.googleapis.com/css?family=Tangerine";
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+*::-webkit-scrollbar{
+  display: none;
+}
+body{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
